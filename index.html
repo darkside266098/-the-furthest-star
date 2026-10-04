@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Furthest Star</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+
+            background: #000;
+            color: #fff;
+
+            font-family: Arial, sans-serif;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            overflow: hidden;
+        }
+
+        .stars {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+        }
+
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: white;
+            border-radius: 50%;
+            opacity: 0.8;
+        }
+
+        .start-page {
+            position: relative;
+            z-index: 1;
+
+            text-align: center;
+        }
+
+        .logo-star {
+            font-size: 42px;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            margin: 0;
+
+            font-size: 42px;
+            font-weight: 400;
+            letter-spacing: 2px;
+        }
+
+        .welcome {
+            margin-top: 14px;
+
+            font-size: 18px;
+            font-weight: 300;
+
+            opacity: 0.85;
+        }
+
+        .buttons {
+            margin-top: 40px;
+
+            display: flex;
+            gap: 14px;
+            justify-content: center;
+        }
+
+        .start-button {
+            padding: 12px 24px;
+
+            background: transparent;
+            color: white;
+
+            border: 1px solid rgba(255, 255, 255, 0.55);
+            border-radius: 6px;
+
+            font-size: 15px;
+
+            cursor: pointer;
+
+            transition: 0.2s ease;
+        }
+
+        .start-button:hover {
+            background: white;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="stars">
+
+        <span class="star" style="top: 12%; left: 18%;"></span>
+        <span class="star" style="top: 23%; left: 72%;"></span>
+        <span class="star" style="top: 35%; left: 43%;"></span>
+        <span class="star" style="top: 67%; left: 12%;"></span>
+        <span class="star" style="top: 78%; left: 82%;"></span>
+        <span class="star" style="top: 54%; left: 91%;"></span>
+        <span class="star" style="top: 88%; left: 38%;"></span>
+        <span class="star" style="top: 15%; left: 91%;"></span>
+        <span class="star" style="top: 44%; left: 7%;"></span>
+        <span class="star" style="top: 82%; left: 63%;"></span>
+        <span class="star" style="top: 31%; left: 27%;"></span>
+        <span class="star" style="top: 61%; left: 52%;"></span>
+
+    </div>
+
+    <main class="start-page">
+
+        <div class="logo-star">★</div>
+
+        <h1>The Furthest Star</h1>
+
+        <div class="welcome">
+            Welcome traveler
+        </div>
+
+        <div class="buttons">
+
+            <button class="start-button">
+                Create Account
+            </button>
+
+            <button class="start-button">
+                Sign in
+            </button>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
